@@ -6,10 +6,7 @@ colorscheme NeoSolarized
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'dense-analysis/ale', { 'tag': 'v3.1.0' }
 Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
-Plug 'yaegassy/coc-htmldjango', { 'tag': 'v0.8.2', 'do': 'yarn install --frozen-lockfile' }
-Plug 'pappasam/coc-jedi', { 'tag': 'v0.29.6', 'do': 'yarn install --frozen-lockfile && yarn build' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'yarn install --frozen-lockfile' }
-Plug 'neoclide/coc-snippets', { 'tag': 	'2.4.6' }
 Plug 'overcache/NeoSolarized'
 Plug 'SirVer/ultisnips', { 'tag': '3.2' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
@@ -38,6 +35,21 @@ let g:gitgutter_sign_allow_clobber = 0
 
 " coc.nvim
 " https://github.com/neoclide/coc.nvim
+
+let g:coc_global_extensions = [
+	\'coc-css',
+	\'coc-eslint',
+	\'coc-html',
+	\'coc-htmldjango',
+	\'coc-jedi',
+	\'coc-json',
+	\'coc-snippets',
+	\'coc-sql',
+	\'coc-tsserver',
+	\'coc-yaml',
+	\'coc-yank',
+	\]
+
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8
