@@ -1,6 +1,6 @@
 set number
 set ignorecase
-set background=light
+set background=dark
 colorscheme NeoSolarized
 
 call plug#begin('~/.local/share/nvim/plugged')
@@ -20,7 +20,7 @@ call plug#end()
 
 
 " airline
-let g:airline_theme='solarized'
+let g:airline_theme='dark_minimal'
 
 
 " ale
