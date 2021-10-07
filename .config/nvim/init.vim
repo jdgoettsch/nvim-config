@@ -45,6 +45,7 @@ let g:coc_global_extensions = [
 	\'coc-json',
 	\'coc-snippets',
 	\'coc-sql',
+	\'coc-stylelintplus',
 	\'coc-tsserver',
 	\'coc-yaml',
 	\'coc-yank',
