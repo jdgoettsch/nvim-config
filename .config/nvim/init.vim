@@ -1,5 +1,6 @@
 set number
 set ignorecase
+set cursorline
 set background=dark
 colorscheme NeoSolarized
 
