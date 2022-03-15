@@ -44,6 +44,7 @@ let g:coc_global_extensions = [
 	\'coc-htmldjango',
 	\'coc-jedi',
 	\'coc-json',
+	\'coc-markdownlint',
 	\'coc-snippets',
 	\'coc-sql',
 	\'coc-stylelintplus',
