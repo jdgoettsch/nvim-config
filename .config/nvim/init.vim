@@ -5,11 +5,11 @@ set background=dark
 colorscheme NeoSolarized
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'dense-analysis/ale', { 'tag': 'v3.1.0' }
-Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
+Plug 'dense-analysis/ale', { 'tag': 'v3.2.0' }
+Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'yarn install --frozen-lockfile' }
-Plug 'overcache/NeoSolarized'
-Plug 'SirVer/ultisnips', { 'tag': '3.2' }
+Plug 'overcache/NeoSolarized', { 'branch': 'master' }
+Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
 Plug 'vim-airline/vim-airline-themes', { 'branch': 'master' }
 Plug 'airblade/vim-gitgutter', { 'branch': 'master' }
