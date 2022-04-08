@@ -17,6 +17,7 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'branch': 'master' }
 Plug 'rodjek/vim-puppet', { 'branch': 'master' }
 Plug 'honza/vim-snippets', { 'tag': '1.0.0' }
 Plug 'tpope/vim-vinegar', { 'tag': 'v1.0' }
+Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.15.0' }
 call plug#end()
 
 
@@ -230,3 +231,23 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+" Indent Blankline
+lua << EOF
+vim.opt.termguicolors = true
+vim.cmd [[highlight IndentBlanklineIndent1 guibg=#002B36 gui=nocombine]]
+vim.cmd [[highlight IndentBlanklineIndent2 guibg=#073642 gui=nocombine]]
+
+require("indent_blankline").setup {
+    char = "",
+    char_highlight_list = {
+        "IndentBlanklineIndent1",
+        "IndentBlanklineIndent2",
+    },
+    space_char_highlight_list = {
+        "IndentBlanklineIndent1",
+        "IndentBlanklineIndent2",
+    },
+    show_trailing_blankline_indent = false,
+}
+EOF
