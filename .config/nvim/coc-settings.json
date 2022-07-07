@@ -2,5 +2,9 @@
 	"markdownlint.config": {
 		"default": true,
 		"line_length": false
-	}
+	},
+	"eslint.packageManager": "yarn",
+	"eslint.nodePath": ".yarn/sdks",
+	"workspace.workspaceFolderCheckCwd": false,
+	"tsserver.tsdk": ".yarn/sdks/typescript/lib"
 }
