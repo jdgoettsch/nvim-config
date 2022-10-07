@@ -1,4 +1,5 @@
-let g:ale_linters = {'python': ['flake8', 'mypy', 'pycodestyle'],}
-let g:ale_fixers = {'python': ['remove_trailing_lines', 'trim_whitespace'],}
-let g:ale_python_flake8_options = '-m flake8 --max-line-length=120'
+let g:ale_linters = {'python': ['bandit', 'pycodestyle', 'pylint'],}
+let g:ale_fixers = {'python': ['remove_trailing_lines', 'reorder-python-imports', 'trim_whitespace'],}
+" let g:ale_python_flake8_options = '--max-line-length=120'
+let g:ale_python_pylint_options = '--disable=invalid-name --disable=redefined-outer-name --disable=wrong-import-order'
 setlocal textwidth=119
