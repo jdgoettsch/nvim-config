@@ -5,7 +5,7 @@ set background=dark
 colorscheme NeoSolarized
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'dense-analysis/ale', { 'tag': 'v3.2.0' }
+Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'overcache/NeoSolarized', { 'branch': 'master' }
