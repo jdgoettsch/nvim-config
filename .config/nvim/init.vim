@@ -48,6 +48,7 @@ let g:coc_global_extensions = [
 	\'coc-json',
 	\'coc-markdownlint',
 	\'coc-snippets',
+	\'coc-solargraph',
 	\'coc-sql',
 	\'coc-stylelintplus',
 	\'coc-tsserver',
