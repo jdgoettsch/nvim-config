@@ -1,5 +1,14 @@
 {
 	"htmldjango.djlint.enableLint": true,
+        "languageserver": {
+          "puppet": {
+            "command": "ruby",
+            "args": ["/home/goettsch/Documents/workspace/puppet-editor-services/puppet-languageserver", "--stdio", "--puppet-settings=--moduledir,/etc/puppetlabs/code/modules,/etc/puppetlabs/code/environments/prod2/modules"],
+            "cwd": "/home/goettsch/Documents/workspace/puppet-editor-services",
+            "filetypes": ["puppet"],
+            "rootPatterns": [".git/", "metadata.json"]
+          }
+        },
 	"markdownlint.config": {
 		"default": true,
 		"line_length": false

@@ -9,6 +9,7 @@ Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'overcache/NeoSolarized', { 'branch': 'master' }
+Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
 Plug 'vim-airline/vim-airline-themes', { 'branch': 'master' }
@@ -228,6 +229,10 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+" Suda.vim
+" https://github.com/lambdalisue/suda.vim
+let g:suda_smart_edit = 1
 
 " Indent Blankline
 lua << EOF
