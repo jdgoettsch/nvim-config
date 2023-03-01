@@ -230,10 +230,6 @@ endfunction
 
 let g:coc_snippet_next = '<tab>'
 
-" Suda.vim
-" https://github.com/lambdalisue/suda.vim
-let g:suda_smart_edit = 1
-
 " Indent Blankline
 lua << EOF
 vim.opt.termguicolors = true
