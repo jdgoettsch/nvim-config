@@ -18,7 +18,7 @@ Plug 'Vimjas/vim-python-pep8-indent', { 'branch': 'master' }
 Plug 'rodjek/vim-puppet', { 'branch': 'master' }
 Plug 'honza/vim-snippets', { 'tag': '1.0.0' }
 Plug 'tpope/vim-vinegar', { 'tag': 'v1.0' }
-Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.3' }
+Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.4' }
 call plug#end()
 
 
