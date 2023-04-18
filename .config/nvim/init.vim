@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'overcache/NeoSolarized', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
+Plug 'godlygeek/tabular', { 'branch': 'master' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
 Plug 'vim-airline/vim-airline-themes', { 'branch': 'master' }
