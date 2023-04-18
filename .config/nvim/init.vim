@@ -8,6 +8,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'ellisonleao/glow.nvim', { 'tag': 'v0.2.0' }
 Plug 'overcache/NeoSolarized', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
 Plug 'godlygeek/tabular', { 'branch': 'master' }
@@ -230,6 +231,12 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
+
+" glow
+"
+lua << EOF
+require('glow').setup()
+EOF
 
 " Indent Blankline
 lua << EOF
