@@ -1,17 +1,13 @@
-set number
-set ignorecase
-set cursorline
-set background=dark
-colorscheme NeoSolarized
-
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ellisonleao/glow.nvim', { 'tag': 'v0.2.0' }
 Plug 'overcache/NeoSolarized', { 'branch': 'master' }
+Plug 'ishan9299/nvim-solarized-lua', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
 Plug 'godlygeek/tabular', { 'branch': 'master' }
+Plug 'nvim-treesitter/nvim-treesitter', { 'tag': 'v0.9.0' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
 Plug 'vim-airline/vim-airline-themes', { 'branch': 'master' }
@@ -23,9 +19,13 @@ Plug 'tpope/vim-vinegar', { 'tag': 'v1.0' }
 Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.4' }
 call plug#end()
 
-
-" airline
-let g:airline_theme='dark_minimal'
+set cursorline
+set ignorecase
+set number
+set termguicolors
+" colorscheme NeoSolarized
+colorscheme solarized-high
+set background=dark
 
 
 " ale
@@ -237,6 +237,8 @@ let g:coc_snippet_next = '<tab>'
 lua << EOF
 require('glow').setup()
 EOF
+
+colorscheme NeoSolarized
 
 " Indent Blankline
 lua << EOF
