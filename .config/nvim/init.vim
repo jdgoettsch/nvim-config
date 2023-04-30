@@ -3,10 +3,9 @@ Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ellisonleao/glow.nvim', { 'tag': 'v0.2.0' }
-Plug 'overcache/NeoSolarized', { 'branch': 'master' }
-Plug 'ishan9299/nvim-solarized-lua', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
 Plug 'godlygeek/tabular', { 'branch': 'master' }
+Plug 'folke/tokyonight.nvim', { 'tag': 'v1.17.0' }
 Plug 'nvim-treesitter/nvim-treesitter', { 'tag': 'v0.9.0' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
@@ -23,8 +22,7 @@ set cursorline
 set ignorecase
 set number
 set termguicolors
-" colorscheme NeoSolarized
-colorscheme solarized-high
+colorscheme tokyonight-night
 set background=dark
 
 
@@ -53,7 +51,7 @@ let g:coc_global_extensions = [
 	\'coc-snippets',
 	\'coc-solargraph',
 	\'coc-sql',
-	\'coc-stylelintplus',
+		\'coc-stylelintplus',
 	\'coc-tsserver',
 	\'coc-yaml',
 	\'coc-yank',
@@ -238,24 +236,12 @@ lua << EOF
 require('glow').setup()
 EOF
 
-colorscheme NeoSolarized
-
 " Indent Blankline
 lua << EOF
 vim.opt.termguicolors = true
-vim.cmd [[highlight IndentBlanklineIndent1 guibg=#002B36 gui=nocombine]]
-vim.cmd [[highlight IndentBlanklineIndent2 guibg=#073642 gui=nocombine]]
 
 require("indent_blankline").setup {
-    char = "",
-    char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-    },
-    space_char_highlight_list = {
-        "IndentBlanklineIndent1",
-        "IndentBlanklineIndent2",
-    },
-    show_trailing_blankline_indent = false,
+    show_end_of_line = true,
+    space_char_blankline = " ",
 }
 EOF
