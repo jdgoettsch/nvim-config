@@ -23,7 +23,6 @@ set ignorecase
 set number
 set termguicolors
 colorscheme tokyonight-night
-set background=dark
 
 
 " ale
