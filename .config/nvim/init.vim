@@ -6,7 +6,7 @@ Plug 'ellisonleao/glow.nvim', { 'tag': 'v0.2.0' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
 Plug 'godlygeek/tabular', { 'branch': 'master' }
 Plug 'folke/tokyonight.nvim', { 'tag': 'v1.17.0' }
-Plug 'nvim-treesitter/nvim-treesitter', { 'tag': 'v0.9.0' }
+Plug 'nvim-treesitter/nvim-treesitter', { 'tag': 'v0.9.0', 'do': ':TSUpdate' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'vim-airline/vim-airline', { 'tag': 'v0.11' }
 Plug 'vim-airline/vim-airline-themes', { 'branch': 'master' }
