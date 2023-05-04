@@ -9,7 +9,6 @@ Plug 'nvim-tree/nvim-web-devicons', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
 Plug 'godlygeek/tabular', { 'branch': 'master' }
 Plug 'folke/tokyonight.nvim', { 'tag': 'v1.17.0' }
-Plug 'nvim-treesitter/nvim-treesitter', { 'tag': 'v0.9.0', 'do': ':TSUpdate' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'airblade/vim-gitgutter', { 'branch': 'master' }
 Plug 'Vimjas/vim-python-pep8-indent', { 'branch': 'master' }
@@ -285,18 +284,6 @@ function mixed_indent()
     })
 EOF
 
-" nvim-treesitter
-"
-lua << EOF
-require'nvim-treesitter.configs'.setup {
-    ensure_installed = { "awk", "bash",  "c", "cmake", "git_config", "git_rebase", "gitattributes", "gitcommit", "gitignore", "html", "htmldjango", "http", "ini", "javascript", "json", "lua", "make", "markdown", "markdown_inline", "passwd", "perl", "php", "phpdoc", "python", "query", "ruby", "scss", "sql", "vim", "vimdoc", "yaml" },
-    auto_install = true,
-    highlight = {
-        enable = true
-    },
-    additional_vim_regex_highlighting = false,
-}
-EOF
 
 " tokyonight
 "
