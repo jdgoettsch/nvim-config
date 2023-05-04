@@ -285,6 +285,15 @@ function mixed_indent()
     })
 EOF
 
+" nvim-treesitter
+"
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = { "awk", "bash",  "c", "cmake", "git_config", "git_rebase", "gitattributes", "gitcommit", "gitignore", "html", "htmldjango", "http", "ini", "javascript", "json", "lua", "make", "markdown", "markdown_inline", "passwd", "perl", "php", "phpdoc", "python", "query", "ruby", "scss", "sql", "vim", "vimdoc", "yaml" },
+    auto_install = true,
+}
+EOF
+
 " tokyonight
 "
 lua << EOF
