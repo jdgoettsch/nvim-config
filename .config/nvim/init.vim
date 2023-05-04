@@ -303,6 +303,6 @@ EOF
 lua << EOF
 require("tokyonight").setup({
     style = "dark",
-        light_style = "day",
-    })
+    light_style = "day",
+})
 EOF
