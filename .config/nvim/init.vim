@@ -3,6 +3,7 @@ Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ellisonleao/glow.nvim', { 'tag': 'v0.2.0' }
+Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.4' }
 Plug 'nvim-lualine/lualine.nvim', { 'branch': 'master' }
 Plug 'nvim-tree/nvim-web-devicons', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
@@ -14,8 +15,7 @@ Plug 'airblade/vim-gitgutter', { 'branch': 'master' }
 Plug 'Vimjas/vim-python-pep8-indent', { 'branch': 'master' }
 Plug 'rodjek/vim-puppet', { 'branch': 'master' }
 Plug 'honza/vim-snippets', { 'branch': 'master' }
-Plug 'tpope/vim-vinegar', { 'tag': 'v1.0' }
-Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.4' }
+Plug 'tpope/vim-vinegar', { 'branch': 'master' }
 call plug#end()
 
 set background=light
@@ -30,11 +30,6 @@ colorscheme tokyonight-day
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {'*': ['remove_trailing_lines', 'trim_whitespace'],}
 let g:ale_virtualtext_cursor = 'disabled'  " turn off inline errors
-
-
-" gitgutter
-" Prioritize errors over git changes
-let g:gitgutter_sign_allow_clobber = 0
 
 
 " coc.nvim
@@ -231,6 +226,11 @@ endfunction
 let g:coc_snippet_next = '<tab>'
 
 
+" gitgutter
+" Prioritize errors over git changes
+let g:gitgutter_sign_allow_clobber = 0
+
+
 " glow
 "
 lua << EOF
@@ -238,7 +238,7 @@ require('glow').setup()
 EOF
 
 
-" Indent Blankline
+" indent-blankline
 "
 lua << EOF
 vim.opt.termguicolors = true
