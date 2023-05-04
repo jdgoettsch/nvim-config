@@ -291,6 +291,10 @@ lua << EOF
 require'nvim-treesitter.configs'.setup {
     ensure_installed = { "awk", "bash",  "c", "cmake", "git_config", "git_rebase", "gitattributes", "gitcommit", "gitignore", "html", "htmldjango", "http", "ini", "javascript", "json", "lua", "make", "markdown", "markdown_inline", "passwd", "perl", "php", "phpdoc", "python", "query", "ruby", "scss", "sql", "vim", "vimdoc", "yaml" },
     auto_install = true,
+    highlight = {
+        enable = true
+    },
+    additional_vim_regex_highlighting = false,
 }
 EOF
 
