@@ -1,14 +1,14 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'dense-analysis/ale', { 'tag': 'v3.3.0' }
+Plug 'dense-analysis/ale', { 'branch': 'master' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'ellisonleao/glow.nvim', { 'tag': 'v0.2.0' }
-Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.4' }
+Plug 'ellisonleao/glow.nvim', { 'branch': 'main' }
+Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'master' }
 Plug 'nvim-lualine/lualine.nvim', { 'branch': 'master' }
 Plug 'nvim-tree/nvim-web-devicons', { 'branch': 'master' }
-Plug 'lambdalisue/suda.vim', { 'tag': 'v0.4.1' }
+Plug 'lambdalisue/suda.vim', { 'branch': 'master' }
 Plug 'godlygeek/tabular', { 'branch': 'master' }
-Plug 'folke/tokyonight.nvim', { 'tag': 'v1.17.0' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
 Plug 'airblade/vim-gitgutter', { 'branch': 'master' }
 Plug 'Vimjas/vim-python-pep8-indent', { 'branch': 'master' }
@@ -279,6 +279,12 @@ function mixed_indent()
     end
     require('lualine').setup({
         sections = {
+            lualine_c = {
+                {
+                    'filename',
+                    path = 2
+                }
+            },
             lualine_z = { 'location', mixed_indent },
         }
     })
