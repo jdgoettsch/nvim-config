@@ -280,6 +280,12 @@ function mixed_indent()
     end
     require('lualine').setup({
         sections = {
+            lualine_c = {
+                {
+                    'filename',
+                    path = 2
+                }
+            },
             lualine_z = { 'location', mixed_indent },
         }
     })
