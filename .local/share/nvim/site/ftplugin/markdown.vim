@@ -4,3 +4,4 @@ setlocal shiftwidth=2
 setlocal nosmarttab
 setlocal expandtab
 setlocal linebreak
+setlocal spell
