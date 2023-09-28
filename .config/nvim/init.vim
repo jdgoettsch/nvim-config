@@ -3,7 +3,7 @@ Plug 'dense-analysis/ale', { 'branch': 'master' }
 Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ellisonleao/glow.nvim', { 'branch': 'main' }
-Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'master' }
+Plug 'lukas-reineke/indent-blankline.nvim', { 'tag': 'v2.20.8' }
 Plug 'nvim-lualine/lualine.nvim', { 'branch': 'master' }
 Plug 'nvim-tree/nvim-web-devicons', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'branch': 'master' }
