@@ -4,6 +4,7 @@ Plug 'jiangmiao/auto-pairs', { 'branch': 'master' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ellisonleao/glow.nvim', { 'branch': 'main' }
 Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'master' }
+Plug 'neovim/nvim-lspconfig', { 'branch': 'master' }
 Plug 'nvim-lualine/lualine.nvim', { 'branch': 'master' }
 Plug 'nvim-tree/nvim-web-devicons', { 'branch': 'master' }
 Plug 'lambdalisue/suda.vim', { 'branch': 'master' }
@@ -247,6 +248,9 @@ vim.opt.list = true
 require("ibl").setup ()
 EOF
 
+" lspconfig
+"
+
 " lualine
 "
 lua << EOF
@@ -295,6 +299,10 @@ require'nvim-treesitter.configs'.setup {
     auto_install = true,
     highlight = {
         enable = true
+    },
+    -- Needed because treesitter highlight turns off autoindent for php files
+    indent = {
+        enable = true,
     },
     additional_vim_regex_highlighting = false,
 }
