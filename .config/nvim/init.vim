@@ -12,7 +12,7 @@ Plug 'godlygeek/tabular', { 'branch': 'master' }
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'nvim-treesitter/nvim-treesitter', { 'branch': 'master', 'do': ':TSUpdate' }
 Plug 'SirVer/ultisnips', { 'branch': 'master' }
-Plug 'airblade/vim-gitgutter', { 'branch': 'master' }
+Plug 'airblade/vim-gitgutter', { 'branch': 'main' }
 Plug 'Vimjas/vim-python-pep8-indent', { 'branch': 'master' }
 Plug 'rodjek/vim-puppet', { 'branch': 'master' }
 Plug 'honza/vim-snippets', { 'branch': 'master' }
