@@ -56,6 +56,7 @@ let g:coc_global_extensions = [
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8
+set fileencodings=utf-8,latin1
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -307,6 +308,15 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
 }
 EOF
+
+" sql
+"
+" Open all .sql files at utf-8
+augroup SqlUtf8
+  autocmd!
+  autocmd BufReadPre,BufNewFile *.sql set fileencodings=utf-8,latin1
+  autocmd BufReadPost *.sql if &fileencoding != 'utf-8' | e ++enc=utf-8 | endif
+augroup END
 
 " tokyonight
 "
