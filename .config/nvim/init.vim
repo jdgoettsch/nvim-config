@@ -292,6 +292,10 @@ function mixed_indent()
     })
 EOF
 
+" markdown
+"
+let g:markdown_recommended_style = 0
+
 " nvim-treesitter
 "
 lua << EOF
